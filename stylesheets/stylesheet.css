@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -99,7 +99,13 @@ header h2 {
 }
 
 #downloads {
-  margin-bottom: 40px;
+  	margin-bottom: 40px;
+}
+
+#entry {
+	border-style: solid;
+	border-width: 1px;
+	padding: 15px;
 }
 
 a.button {
@@ -117,7 +123,7 @@ a.button {
   padding: 12px 8px 12px 8px;
   display: block;
   float: left;
-  width: 179px;
+  width: 150px;
   margin-right: 14px;  
   background: #fdfdfd; /* Old browsers */
   background: -moz-linear-gradient(top,  #fdfdfd 0%, #f2f2f2 100%); /* FF3.6+ */
@@ -158,11 +164,23 @@ a.button span {
 #download-tar-gz span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
 }
+#show-main span {
+  background: transparent url(../images/net_icon_sw_small.png) 12px 50% no-repeat;
+}
+#show-main {
+  margin-right: 15;
+}
 #view-on-github span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
 }
 #view-on-github {
   margin-right: 0;
+}
+#show-download span {
+  background: transparent url(../images/net_icon_small.png) 12px 50% no-repeat;
+}
+#show-download {
+  margin-right: 15;
 }
 
 code, pre {
