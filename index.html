@@ -53,6 +53,41 @@
 
         <section id="main_content">
 					
+					<h3>Bug: Weird behaviour if file changes its size</h3>
+					<h5>Sun, Jan 27 2013, 13:37</h5>
+					<p align="justify">
+						This bug is not all new, but I didn't really check the programs behaviour in this case until yesterday.
+					</p>
+					<p align="justify">
+						The problem:
+					</p>
+					<p align="justify">
+						Let's say you have a file in your shared directory which is 50MB in size. The default chunk size Peergroup uses is 512kB.
+						If the file changes and and afterwards its size differs more than 512kB from it's original size, Peergroup will go weird.
+					</p>
+					<p align="justify">
+						So basically the weird behavior is caused if a file has more or less chunks after an update. In this case Peergroup downloads
+						wrong chunks from the peer with the updated file, then compares the hashes of the wrong chunks with the hashes which would be 
+						correct, and finally attempts to redownload these (wrong) chunks because of the failed hash check.
+					</p>
+					<p align="justify">
+						I will work hard to fix this soon, but currently my exam preparations have a higher priority.
+					</p>
+					<p align="justify">
+						To spread some hope and happiness, the next update will not just fix this bug, it will also introduce these features:
+					</p>
+					<p>
+						<ul>
+							<li>Server mode (keep data available permanently if no other computers are online)</li>
+							<li>Switch between "No Encryption", "AES-128", "AES-256"</li>
+							<li>Improved detection of local IP (now also works on Linux computers)</li>
+					</p>
+					<p align="justify">
+						Cheers,<br>Nico
+					</p>
+					
+					<hr>
+					
 					<h3>Released Version 0.05</h3>
 					<h5>Mon, Dec 17 2012, 14:42</h5>
 					<p align="justify">
