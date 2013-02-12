@@ -53,20 +53,38 @@
 
         <section id="main_content">
 
-<h3>Fixed "changed-file-size" bug</h3>
-<h5>Mon, Feb 04 2013, 22:49</h5>
-<p align="justify">
-    I just managed to fix this severe bug that caused PG to infinitely download file chunks.
-</p>
-<p align="justify">
-    The reason for this bug was that not all chunks of a shrinked file got removed from PGs internal datastructure.
-</p>
-<p align="justify">
-    I highly recommend only using the current version 0.06dev from the sources which incorporates the bug fix already!<br>
-    Cheers,<br>Nico
-</p>
+					<h3>First parts of a GUI available in "development" branch</h3>
+					<h5>Tue, Feb 12 2013, 12:11</h5>
+					<p align="justify">
+						Now that I have a bit more time for programming I yesterday started reimplementing some parts of my GUI draft in Swing.
+						The first draft was only a local try, and never appeard in the sources. It used SWT as framework. I finally decided to 
+						use Swing as it is available on all Java supported platforms. Further I liked it that Swing does not need any additional 
+						libraries to be included in the final jar file. SWT would have cost approx. 6MB extra for each supported OS.
+					</p>
+					<p align="justify">
+						The implemented GUI parts are a starting point for the GUI, and will soon be filled with live ;-) For developers 
+						convenience I also included necessary Eclipse project files in the "development" branch of the repository. However, 
+						I will continue supporting the build.xml file in the repo to maintain usability for non-Eclipse hackers.<br><br>
+						Cheers,<br>
+						Nico
+					</p>
+					
+					<hr>
 
-<hr>
+					<h3>Fixed "changed-file-size" bug</h3>
+					<h5>Mon, Feb 04 2013, 22:49</h5>
+					<p align="justify">
+					    I just managed to fix this severe bug that caused PG to infinitely download file chunks.
+					</p>
+					<p align="justify">
+					    The reason for this bug was that not all chunks of a shrinked file got removed from PGs internal datastructure.
+					</p>
+					<p align="justify">
+					    I highly recommend only using the current version 0.06dev from the sources which incorporates the bug fix already!<br><br>
+					    Cheers,<br>Nico
+					</p>
+
+					<hr>
 					
 					<h3>Made progress fixing bug</h3>
 					<h5>Fri, Feb 01 2013, 12:42</h5>
