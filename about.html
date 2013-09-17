@@ -19,7 +19,9 @@
       <div class="inner">
 
         <header>
-					<img src="images/logo_small_transp.png" style="float:left; width: 140px; height: 120px; margin-right:10px">
+					<a href="index.html">
+						<img src="images/logo_small_transp.png" style="float:left; width: 140px; height: 120px; margin-right:10px">
+					</a>
           <div style="float:left">
 						<h1>Peergroup</h1>
           	<h2>P2P Synchronization and Sharing</h2>
@@ -32,9 +34,6 @@
         <section id="downloads" class="clearfix" style="clear: left">
 					<a href="index.html" id="show-main" class="button">
 						<span>Home</span>
-					</a>
-					<a href="download.html" id="show-download" class="button">
-						<span>Download</span>
 					</a>
 					<a href="contact.html" id="view-on-github" class="button">
 						<span>Contact</span>
@@ -53,6 +52,25 @@
 
         <section id="main_content">
 
+					<h3>Where?</h3>
+
+					<p align="justify">
+						Find the newest (compiled) releases  
+						<a href="https://github.com/smashnet/Peergroup/releases">here</a>!
+					</p>
+
+					<p align="justify">
+          <strong>Requirements</strong>: MacOSX/Linux/Windows running <strong>Java 7</strong> or newer.
+          </p>
+          <p align="justify">
+            Note: Raspberry Pi works (I checked ;-), but it's terribly slow.<br>
+            Edit: Now checked on Raspberry Pi with Oracles new Java 7 Update 40 which is ARM compatible. Expect around 1.5MB/s w/o encryption and 0.8MB/s to 1MB/s with encryption enabled.
+					</p>
+
+					<p align="justify">
+						This project is open-source software. If you are interested, visit the <a href="https://groups.google.com/forum/#!forum/peergroup-p2p-syncing">discussion forum</a> and the <a href="https://github.com/smashnet/Peergroup">GitHub repository</a>!
+
+
 					<h3>What?</h3>
 
 					<p align="justify">If you ever have been in the situation of needing to synchronize data 
@@ -68,11 +86,14 @@
 
 					<p>
 						<ul>
-							<li><u>Private:</u> All shared data is never located anywhere but on your devices and your 
-								sharing partner's devices.</li>
-							<li><u>Secure:</u> Data transfers are all encrypted using AES-128. Use of AES-256 is in progress.</li>
-							<li><u>Fast:</u> The P2P data exchange is inspired by the BitTorrent technology that has 
-								proven to deliver fast distribution of data across many devices.</li>
+							<li><u>Private:</u> <br>
+							All shared data is never located anywhere else but on your devices and your 
+							sharing partner's devices.</li>
+							<li><u>Secure:</u> <br>
+							Data transfers are all encrypted using AES.</li>
+							<li><u>Fast:</u> <br>
+							The P2P data exchange is inspired by the BitTorrent technology that has 
+							proven to deliver fast distribution of data across many devices.</li>
 						</ul>
 					</p>
 
@@ -80,7 +101,7 @@
 
 					<p align="justify">Peergroup manages the devices and users using (password protected) XMPP 
 						Multi-User-Channels. So all you need to use Peergroup is an XMPP account, currently one per 
-						device. Registering an XMPP account is free an does not require any personal data. Just 
+						device. Registering an XMPP account is free and does not require any personal data. Just 
 						join to the same Multi-User-Channel with all your devices using the Peergroup client, and 
 						they will sync the data in the shared folder automatically.</p>
 
